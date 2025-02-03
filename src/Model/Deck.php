@@ -97,4 +97,3 @@ class Deck extends Model
         return $res ? $res : false;
     }
 }
-
