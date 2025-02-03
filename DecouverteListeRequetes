@@ -1,0 +1,23 @@
+page 1 = rien
+page 2 =
+Récupérer tous les decks valides dont le nombre de cartes est compris entre x et y
+si x est null alors x égale 1
+si y est null alors y égale 100
+//fait
+
+
+page 3 = 
+récupérer un deck valides par son idAdmin
+//fait
+page 4 =
+récupérer un deck valides par son idAdmin
+//fait
+page 5 = 
+Récupérer toutes les cartes dont l'idDeck valides est égale à x
+//fait
+
+page 6 = 
+Récupérer tous les names des créateurs dont l'idCréa est présent dans les cartes dont l'id deck est égale à x
+//fait
+Ajouter +1 au deck x et aux créateurs dont l'une des cartes a pour deck id x
+//fait

@@ -1,0 +1,43 @@
+page 3
+Vérification authentification Admin // fait check()
+Vérification authentification Créateur // fait check()
+voir si l'utilisateur est banni // fait isBan() avec id //testé
+(s'il l'est anais vide la session et renvoie un échec)
+
+page 4 crea
+Création d'un créateur (il faut encrypter le mdp) //fait add()
+
+page 5 crea
+Afficher tous les decks en cours de création ou l'id du créateur n'a pas participé au deck // fait noParticipation() //testé
+
+page 6 crea
+Afficher tous les decks (pas besoin de les avoir validé) // fait getAll()
+Afficher tous les decks que un certain créateur a participer // fait participation() //testé
+
+page 7 crea
+Afficher les infos du créateur // fait getById()
+Afficher le nom et les likes des decks où le créateur à participer // fait participation() //testé
+
+page 8 crea
+//génération de page alétoire
+Afficher les cartes dont l'id deck m'est donnée // getAllByIdDeck() // testé
+Enregistre la carte RNG avec l'iddeck, id Carte selectionné, id créateur //fait add()
+Enregistrer la nouvelle carte // fait add()
+
+page 9 crea
+Afficher la carte RNG // fait getByNum()
+Afficher la carte dont l'iddeck est renseigné, et l'id du créateur est renseigné // fait getByIdDeckAndIdDeck() // testé
+
+page 10 admin
+Afficher tous les decks (pas besoin de les avoir validé) // fait getAll()
+
+TODO:
+
+page 11 admin
+Afficher tous les decks qui sont pas validé. // fait getAllNoValid() // testé
+Afficher la somme des cartes dont l'id deck est égale à chacun de ses cartes (voir au dessu) // fait count() // testé
+
+page 12 admin
+Afficher toutes les cartes du deck renseigné // fait getAllByIdDeck() // testé
+Modifier le champ banni du créateur sur "yes" // ban() // testé
+Mettre a jour la carte dont l'id de la carte est renseigné // edit()

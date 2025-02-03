@@ -1,0 +1,13 @@
+php -S localhost:8000 -t public
+
+Ce qu'il faut faire :
+- Mettre l'api en ligne
+- Ajouter la collection prod Bruno
+- TODO: créateur login
+- Faire le diaporama qui explique :
+    - Carte : idAdmin / idCréa doit être null
+    - Admin / créateur: la gestion des mots de passes
+
+
+Deckouverte - liste des requetes
+page
