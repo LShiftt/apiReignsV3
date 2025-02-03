@@ -10,7 +10,6 @@ class Carte extends Model
 
     protected $tableName = 'carte';
     protected $tableNameRng = 'carte_aleatoire';
-
     protected $tableNameDeck = 'deck';
 
 
@@ -44,7 +43,7 @@ class Carte extends Model
     public function getAllValidByIdDeck(
         int $id,
     ): array {
-        $sql = 'SELECT DISTINCT c.* FROM `{$this->tableName}` as c, `{$this->tableNameDeck}` as d WHERE d.valid = "yes" AND c.id_deck = :id';
+        $sql = "SELECT DISTINCT c.* FROM `{$this->tableName}` as c, `{$this->tableNameDeck}` as d WHERE d.valid = 'yes' AND c.id_deck = :id";
         $sth = $this->query($sql, [':id' => $id]);
         $res = $sth->fetchAll();
         return $res;
@@ -52,7 +51,7 @@ class Carte extends Model
     public function getAllByIdDeck(
         int $id,
     ): array {
-        $sql = 'SELECT * FROM `{$this->tableName}`  WHERE id_deck = :id';
+        $sql = "SELECT * FROM `{$this->tableName}`  WHERE id_deck = :id";
         $sth = $this->query($sql, [':id' => $id]);
         $res = $sth->fetchAll();
         return $res;
@@ -61,7 +60,7 @@ class Carte extends Model
         int $idCarte,
         int $idDeck
     ) {
-        $sql = 'SELECT * FROM `{$this->tableName}`  WHERE id_deck = :idDeck AND id_carte = :idCarte';
+        $sql = "SELECT * FROM `{$this->tableName}`  WHERE id_deck = :idDeck AND id_carte = :idCarte";
         $sth = $this->query($sql, [':idCarte' => $idCarte, ':idDeck' => $idDeck]);
         $res = $sth->fetch();
         return $res;
@@ -69,7 +68,7 @@ class Carte extends Model
     public function count(
         int $id
     ) {
-        $sql = 'SELECT COUNT(id_carte) as count FROM `{$this->tableName}` WHERE id_deck = :id';
+        $sql = "SELECT COUNT(id_carte) as count FROM `{$this->tableName}` WHERE id_deck = :id";
         $sth = $this->query($sql, [':id' => $id]);
         $res = $sth->fetch();
         return $res;
